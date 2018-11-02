@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title="Strona do logowania"      
+        style 
+            include ../assets/style.css   
+    body
+        //jak dodać plik style.css i script.js do link w login.pug i google.pug
+        include ./header.pug
+        .container
+            p Zaloguj się do naszego serwisu.
+            a(href= '/auth/google')
+                        button(type="button") Zaloguj            
+        include ./footer.pug
+    script
+        include ../assets/script.js
