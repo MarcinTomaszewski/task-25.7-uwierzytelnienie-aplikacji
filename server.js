@@ -23,7 +23,7 @@ passport.use(new GoogleStrategy({
     function (accessToken, refreshToken, profile, cb) {
         googleProfile = {
             id: profile.id,
-            displayName: profile.displayName
+            displayName: profile.displayName,            
         };
         cb(null, profile);
     }
